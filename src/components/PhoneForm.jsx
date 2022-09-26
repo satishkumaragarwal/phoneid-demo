@@ -15,14 +15,12 @@ export function PhoneForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className='card' style={{width: "25rem", height: "18rem"}}>
-        <div className="card-body">
-          <img src="https://logincdn.msauth.net/shared/1.0/content/images/microsoft_logo_ed9c9eb0dce17d752bedea6b5acda6d9.png" />
-            <h2>Sign up</h2>
+        <div className="m-4 d-flex flex-column">
+          <img className='align-self-start' style={{width: "30%"}} src="https://logincdn.msauth.net/shared/1.0/content/images/microsoft_logo_ed9c9eb0dce17d752bedea6b5acda6d9.png" />
+            <h2 className='my-2'>Sign up</h2>
             <input type="tel" className="form-control mb-3" id="PhoneNumber" value={phone} onChange={handleChange} placeholder="Phone number" />
-            <input type="submit" value="Next" className="btn btn-primary float-end" />
+            <input type="submit" value="Next" className="btn btn-primary align-self-end col-3" />
         </div> 
-        </div>
     </form>
   );
 }
