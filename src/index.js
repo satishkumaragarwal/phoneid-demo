@@ -9,7 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import ErrorPage from "./components/error-page";
-import {OtpForm} from "./components/OtpForm";
+import {OtpForm, phoneLoader} from "./components/OtpForm";
 import {MailHome} from "./components/MailHome";
 
 const router = createBrowserRouter([
@@ -19,8 +19,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "otp",
+    path: "otp/:phone",
     element: <OtpForm />,
+    loader: phoneLoader
   },
   {
     path: "home",

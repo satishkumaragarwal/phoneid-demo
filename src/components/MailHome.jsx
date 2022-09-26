@@ -24,7 +24,7 @@ export function MailHome() {
         },
     ];
     return (
-        <div>
+        <div className="dflex">
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Mail</a>
@@ -54,7 +54,8 @@ export function MailHome() {
                     title={mock[2].title} />
 
             </ul>
-            <FooterItem />
+            <span className="rounded-circle fs-1 p-3 text-bg-primary float-end">+</span>
+            {/* <FooterItem />  */}
         </div>
     );
 }
