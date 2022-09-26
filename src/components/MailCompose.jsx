@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export function PhoneForm() {
+export function MailCompose() {
   const [phone, setPhone] = useState('');
   const navigate = useNavigate();
   

@@ -11,6 +11,7 @@ import {
 import ErrorPage from "./components/error-page";
 import {OtpForm, phoneLoader} from "./components/OtpForm";
 import {MailHome} from "./components/MailHome";
+import {MailCompose} from "./components/MailCompose";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "home",
     element: <MailHome />,
+  },
+  {
+    path: "compose",
+    element: <MailCompose />,
   },
 ]);
 
