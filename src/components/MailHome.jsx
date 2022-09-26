@@ -28,7 +28,7 @@ export function MailHome() {
     const navigate = useNavigate();
 
     const onCompose = () => {
-        navigate('compose');
+        navigate('/compose');
     };
     return (
         <div className="dflex">
